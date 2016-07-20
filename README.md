@@ -85,3 +85,5 @@ Stats are shown using /stats cmd
 Radio system
 House system by ppc (not included with the download)
 and more...
+
+License:http://www.binpress.com/license/view/l/576fb0f8fecd263df61a63b8b628392e
