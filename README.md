@@ -1,7 +1,7 @@
 # Best-Freeroam-Ever-GM
 This a gamemode (free roam based) for Sanandreas Multiplayer (SA-MP) scripted by me.
 
-###GM Main Created : Sreyas
+###GM Created By : Sreyas
   
 ###Maps
 
