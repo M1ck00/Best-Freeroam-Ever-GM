@@ -4020,34 +4020,29 @@ new VehicleNames[212][] = {
 		
 		if(Info[playerid][inDMZone] != 5)
 		{
-			
-			pcs++;
-			
+		pcs++;
 		}
 		
 		else if(Info[playerid][inDMZone] ==1)
 		{
-			pde--;
+		pde--;
 		}
 		else if(Info[playerid][inDMZone] ==2)
 		{
-			prw--;
+		prw--;
 		}
 		else if(Info[playerid][inDMZone] == 3)
 		{
-			psos--;
+		psos--;
 		}
 		else if(Info[playerid][inDMZone] ==4)
 		{
-			psnipe--;
+		psnipe--;
 		}
-		
 		
 		new Random = random(sizeof(RandomSpawnsCS));
 		LoadObjectsForPlayer( playerid );
 		createdm(playerid,RandomSpawnsCS[Random][0], RandomSpawnsCS[Random][1], RandomSpawnsCS[Random][2], RandomSpawnsCS[Random][3],0,77,5,31,16,100,"~r~Counter Strike DM!");
-		
-		
 		
 		return 1;
 	}
@@ -5143,7 +5138,7 @@ new VehicleNames[212][] = {
 		return 1;
 	}
 	
-	stock createdm(playerid,Float:X,Float:Y,Float:Z,Float:A,interior,virtualworld,zone,weapon1,weapon2,health,str[34])
+	createdm(playerid,Float:X,Float:Y,Float:Z,Float:A,interior,virtualworld,zone,weapon1,weapon2,health,str[34])
 	{
 		
 		Info[playerid][inDM] = 1;
@@ -5170,7 +5165,7 @@ new VehicleNames[212][] = {
 		return 1;
 	}
 	
-	stock IsNumeric(string[])
+	IsNumeric(string[])
 	{
 		for (new i = 0, j = strlen(string); i < j; i++)
 		{
