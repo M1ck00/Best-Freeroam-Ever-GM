@@ -2,7 +2,8 @@
 GM MAIN SCRIPTER:Sreyas
 Testers:Compiler,Oma37
 Build version:1
-Date of update:3/4/16
+Date of update:23/7/16
+
 Pls Dont Remove credits
 */
 #include <a_samp>
@@ -1833,7 +1834,7 @@ new VehicleNames[212][] = {
 				
 				
 				GivePlayerMoney(playerid, 500);
-				Info[playerid][Money] = GetPlayerMoney(playerid);
+				Info[playerid][Money] = GetPlayerMoney(playerid);cmd
 				SetPlayerScore(playerid,0);
 				SendClientMessage(playerid, 0x00FF00FF, "You have successfully registered an account.");
 				SetPlayerColor(playerid, random_color);
@@ -3839,8 +3840,8 @@ new VehicleNames[212][] = {
    	new
     id,
     amount,
-	string[77],
-	name[25];
+	  string[77],
+	  name[25];
     if(sscanf(params,"ui",id,amount)) return SendClientMessage(playerid,-1,""RED"ERROR:"GREY"/givemoney [id] [amount]");
     if(GetPlayerMoney(playerid) < amount || GetPlayerMoney(playerid) <= 0)return SendClientMessage(playerid,-1,""RED"ERROR"GREY"You dont have that money!");
     if(id == playerid) return SendClientMessage(playerid,-1,""RED"ERROR:"GREY"You can't give money to yourself.");
