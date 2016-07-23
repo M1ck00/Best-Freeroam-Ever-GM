@@ -3837,21 +3837,21 @@ new VehicleNames[212][] = {
 	
 	CMD:givemoney(playerid,params[])
 	{
-   	new
-    id,
-    amount,
-	  string[77],
-	  name[25];
-    if(sscanf(params,"ui",id,amount)) return SendClientMessage(playerid,-1,""RED"ERROR:"GREY"/givemoney [id] [amount]");
-    if(GetPlayerMoney(playerid) < amount || GetPlayerMoney(playerid) <= 0)return SendClientMessage(playerid,-1,""RED"ERROR"GREY"You dont have that money!");
-    if(id == playerid) return SendClientMessage(playerid,-1,""RED"ERROR:"GREY"You can't give money to yourself.");
-    GivePlayerMoney(playerid,-amount);
-    GivePlayerMoney(id,amount);
-    GetPlayerName(playerid,name,25);
-    format(string,128,""RED"%s"GREY" has given to you the amount of money: "YELLOW"%i",name,amount);
-    SendClientMessage(id,-1,string);
-    return 1;
-    }
+   		new
+    		id,
+    		amount,
+	  	string[77],
+		name[25];
+		if(sscanf(params,"ui",id,amount)) return SendClientMessage(playerid,-1,""RED"ERROR:"GREY"/givemoney [id] [amount]");
+    		if(GetPlayerMoney(playerid) < amount || GetPlayerMoney(playerid) <= 0)return SendClientMessage(playerid,-1,""RED"ERROR"GREY"You dont have that money!");
+    		if(id == playerid) return SendClientMessage(playerid,-1,""RED"ERROR:"GREY"You can't give money to yourself.");
+    		GivePlayerMoney(playerid,-amount);
+    		GivePlayerMoney(id,amount);
+                GetPlayerName(playerid,name,25);
+		format(string,128,""RED"%s"GREY" has given to you the amount of money: "YELLOW"%i",name,amount);
+    		SendClientMessage(id,-1,string);
+                return 1;
+        }
 	
 	CMD:vjump(playerid)
 	{
